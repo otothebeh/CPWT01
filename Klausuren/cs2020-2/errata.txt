@@ -1,0 +1,11 @@
+
+Errata
+======
+
+Aufgabe 5:
+
+Im UML-Klassendiagramm sind in den Klassen nur Methoden,
+nicht aber Attribute aufgeführt. Dies ist KEIN Fehler,
+denn die Attribute sind an den Assoziationen (Pfeilen)
+eingezeichnet.
+

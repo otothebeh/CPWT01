@@ -1,0 +1,18 @@
+
+Errata
+======
+
+Aufgabe 2: Array [20]
+_____________________
+
+b) Befüllen Sie es mittels klassischer Zählschleife mit den Zahlen
+von 0 bis 900 IN HUNDERTER-SCHRITTEN! [2]
+
+Aufgabe 5: Object [30]
+______________________
+
+o) Bei der Ausgabe auf Konsole muss r3 STATT r2 stehen:
+
+Comparison of r1 with r2: 0
+Comparison of r1 with r3: -1
+

@@ -1,0 +1,11 @@
+
+Errata
+======
+
+Aufgabe 3: Mathematics "Bruch" [30]
+___________________________________
+
+c) Bestimmen Sie unter Verwendung einer Instanzmethode der Klasse "BigInteger"
+das KLEINSTE gemeinsame Vielfache (KGV) (größter gemeinsamer Teiler)
+von Zähler und Nenner! Speichern Sie es in einer lokalen Variablen! [2]
+
