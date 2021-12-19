@@ -1,5 +1,7 @@
 # CPWT01
+
 https://github.com/susam/uncap#readme
+(Vertauscht CapsLock und Esc auf Windowsrechnern. Nice für Vim-Nutzer)
 
 https://www.w3schools.com/html/html_examples.asp
 
