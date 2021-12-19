@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Einkaufzettel</title>
+		
+		<script>
+			window.addEventListener("load", init);
+			
+			function init() {
+				//alert("test");
+				
+				if(window.localStorage) {
+					
+				var zettel = new Einkaufszettel("eingabe", "ausgabe", "einkaufszettel")
+				//@TODO: function ergaenzen!!!
+				document.getElementById("hinzufuegen").addEventListener("click", zettel.hinzufuegen.bind(zettel));
+					
+				} else {
+					alert("WebStorage nicht verfuegbar");
+				}
+			}
+			
+			
+			function Einkaufszettel(eingabeId, ausgabeId, key) {
+				
+				this.eingabeFeld = document.getElementById(eingabeId);
+				this.ausgabeFeld = document.getElementById(ausgabeId);
+				this.key = key;
+				
+				if(window.localStorage[this.key]) {
+					this.inhalt = JSON.parse(window.localStorage[this.key]);
+				} else {
+					this.inhalt = [];
+				}
+				
+				this.schreibeListe();	
+			}
+			
+			
+			Einkaufszettel.prototype = { 
+			
+				hinzufuegen: function() {
+					var eingabe = this.eingabeFeld.value;
+					this.inhalt.push(eingabe);
+					
+					window.localStorage[this.key] = JSON.stringify(this.inhalt);
+					
+					this.eingabeFeld.value = '';
+					this.schreibeEintrag(eingabe);
+				},
+				
+				
+				schreibeListe: function() {
+					for(var i = 0; i < this.inhalt.length; i++) {
+						this.schreibeEintrag(this.inhalt[i]);
+					}	
+				},
+				
+				schreibeEintrag: function(text) {
+					var li = document.createElement("li");
+					li.appendChild(document.createTextNode(text));
+					this.ausgabeFeld.appendChild(li);
+				}
+					
+				
+			};
+				
+		</script>
+	</head>
+	
+	<body>
+		<h1>Einkaufszettel: </h1>
+		
+		Eintrag: <input type="text" id="eingabe" name="eingabe" />
+		<button id="hinzufuegen" type="button">hinzufügen</button>
+		
+		<h1>Liste:</h1>
+		<ul id="ausgabe"></ul>
+		
+		
+		
+	</body>
+</html>
