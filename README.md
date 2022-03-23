@@ -12,3 +12,6 @@ https://www.java-tutorial.org/iteration_und_rekursion.html
 https://github.com/IllusiveCoder/Pruefung
 https://github.com/paulinfo-ba/klausur
 
+https://github.com/Si-Ni/Anwesenheitsliste-Studium
+https://gist.github.com/whitingx/3840905
+https://github.com/Si-Ni/Anwesenheitsliste-Studium
