@@ -16,3 +16,9 @@ https://github.com/Si-Ni/Anwesenheitsliste-Studium
 https://gist.github.com/whitingx/3840905
 https://github.com/Si-Ni/Anwesenheitsliste-Studium
 https://github.com/Krypton43/Klausur-Stuff
+https://github.com/FedorchukAndrii/HTMLStruktur
+
+https://cssgrid-generator.netlify.app/
+
+https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout
+
