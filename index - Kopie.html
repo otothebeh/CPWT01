@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="datum" content="24.02.2022">
+    <meta name="creator" content="Florian">
+    <title>Anwesenheit Hauptberuflicher Dozenten</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="ba-leipzig.png" alt="Headerbild Ba Leipzig">
+            <h1>Anwesenheit Mitarbeiter</h1>
+        </header>
+
+        
+
+        <div class="row">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-flex align-items-left">
+                            <div class="p-2">
+                                <button class="btn btn-outline-primary">zurück</button>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div class="p-2">
+                                <span>04.01.2021 - 09.01.2021 (Kalenderwoche 1)</span>
+                            </div>
+                        </div> 
+                         
+                    </div>
+
+                    <div class="col-3">
+                        <div class="d-flex align-items-left">
+                            <div class="p-2">
+                                <button class="btn btn-outline-primary">vor</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <table class="table table-bordered shadow-lg p-4 mt-3 mb-5 bg-white">
+                    <thead>
+                        <tr>
+                            <th>Dozent</th>
+                            <th>Montag</th>
+                            <th>Dienstag</th>
+                            <th>Mittwoch</th>
+                            <th>Donnerstag</th>
+                            <th>Freitag</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Herr Prof. Brunner</th>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-danger text-white homeoffice" onclick="change(this)">Heimarbeit</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                        </tr>
+                        <tr>
+                            <th>Frau Prof. Schneider</th>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-danger text-white holiday" onclick="change(this)">Urlaub</td>
+                            <td class="bg-danger text-white holiday" onclick="change(this)">Urlaub</td>
+                        </tr>
+                        <tr>
+                            <th>Herr Prof. Siegmund</th>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                            <td class="bg-success text-white teaching" onclick="change(this)">Lehre/Büro</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2">
+                <div  class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Legende</h5>
+                        <table class="table card-text">
+                            <tr><td class="bg-success text-white teaching">Lehre/Büro</td></tr>
+                            <tr><td class="bg-danger text-white homeoffice">Heimarbeit</td></tr>
+                            <tr><td class="bg-danger text-white holiday">Urlaub</td></tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+        <footer>
+            <hr>
+            <img src="sachsen.png" alt="Wappen Sachsen" width="30px">
+            <a href="http://www.ba-leipzig.de/">Staatliche Berufsakademie Sachsen</a>
+            <a href="https://www.ba-leipzig.de/impressum-1">Impressum</a>
+            <a href="mailto:webmaster@ba-leipzig.de">Webmaster</a>
+        </footer>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
