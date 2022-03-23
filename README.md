@@ -15,3 +15,4 @@ https://github.com/paulinfo-ba/klausur
 https://github.com/Si-Ni/Anwesenheitsliste-Studium
 https://gist.github.com/whitingx/3840905
 https://github.com/Si-Ni/Anwesenheitsliste-Studium
+https://github.com/Krypton43/Klausur-Stuff
